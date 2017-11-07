@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.9.26)  7 NOV 2017 21:33
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.9.26)  7 NOV 2017 21:47
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1646,6 +1646,12 @@ LaTeX Warning: Label `fig:5' multiply defined.
 
 LaTeX Warning: Label `fg7' multiply defined.
 
+
+LaTeX Warning: Label `fg7' multiply defined.
+
+
+LaTeX Warning: Label `fg7' multiply defined.
+
 )
 \openout1 = `beamer.aux'.
 
@@ -2021,11 +2027,18 @@ File: images/thuee-logo.png Graphic file (type QTm)
 <use  "images/thuee-logo.png" > [22
 
 ]
-File: images/13.jpg Graphic file (type QTm)
- <use  "images/13.jpg" >
+File: images/14.png Graphic file (type QTm)
+ <use  "images/14.png" >
 File: images/thuee-logo.png Graphic file (type QTm)
 
 <use  "images/thuee-logo.png" > [23
+
+]
+File: images/thank.jpg Graphic file (type QTm)
+ <use  "images/thank.jpg" >
+File: images/thuee-logo.png Graphic file (type QTm)
+
+<use  "images/thuee-logo.png" > [24
 
 ]
 \tf@nav=\write7
@@ -2037,11 +2050,11 @@ File: images/thuee-logo.png Graphic file (type QTm)
 \tf@snm=\write9
 \openout9 = `beamer.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 343.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 343.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 352.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 352.
  (./beamer.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 343.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 343.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 352.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 352.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2049,15 +2062,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 343.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 352.
  ) 
 Here is how much of TeX's memory you used:
- 35302 strings out of 493638
- 690371 string characters out of 6146796
- 705577 words of memory out of 5000000
- 38144 multiletter control sequences out of 15000+600000
+ 35310 strings out of 493638
+ 690447 string characters out of 6146796
+ 705671 words of memory out of 5000000
+ 38150 multiletter control sequences out of 15000+600000
  9439 words of font info for 58 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  56i,15n,63p,10497b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on beamer.pdf (23 pages).
+Output written on beamer.pdf (24 pages).
