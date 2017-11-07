@@ -1,37 +1,56 @@
+% !TEX program = xelatex
+
 \documentclass{beamer}
 \usepackage[utf8]{inputenc}
-
-\usepackage{utopia} %font utopia imported
 \usepackage{xeCJK}
+\usepackage{utopia} %font utopia imported
+%\usepackage[UTF8,noindent]{ctexcap}
 \usetheme{Madrid}
 \usecolortheme{default}
-
+ % 衬线字体：Linux Libertine
+    % BoldFont 可以选择 Bold 字重或者 Semibold 字重
+    % BoldItalicFont 也有对应 BoldFont 的字重选择
+    % 这里使用 Semibold 字重
+  %   \setmainfont{LinLibertine_R.otf}[
+  %     BoldFont = LinLibertine_RZ.otf,
+  %     ItalicFont = LinLibertine_RI.otf,
+  %     BoldItalicFont = LinLibertine_RZI.otf, ]
+  % % 无衬线字体：Linux Biolinum
+  % \setsansfont{LinBiolinum_R.otf}[
+  %     BoldFont = LinBiolinum_RB.otf,
+  %     ItalicFont = LinBiolinum_RI.otf,
+  %     BoldItalicFont = LinBiolinum_RBO.otf]
+  % 等宽/打印机字体：Linux Libertine Mono
+  % \setmonofont{LinLibertine_M.otf}[
+  %     BoldFont = LinLibertine_MB.otf,
+  %     ItalicFont = LinLibertine_MO.otf,
+  %     BoldItalicFont  = LinLibertine_MBO.otf]
+  % \setCJKmainfont[ItalicFont={AR PL UKai CN},
+  % BoldFont={WenQuanYi Micro Hei}]{IPAMinCho,IPA明朝}
+  \setCJKsansfont{WenQuanYi Micro Hei}
+  \setCJKmonofont{WenQuanYi Micro Hei Mono}
 %------------------------------------------------------------
 %This block of code defines the information to appear in the
 %Title page
-\title[About Beamer] %optional
+\title[光电中期报告] %optional
 {光电子技术实验}
 
-\subtitle{A short story}
+\subtitle{固体激光器的静态特性及调Q技术}
 
-\author[Arthur, Doe] % (optional)
-{A.~B.~Arthur\inst{1} \and J.~Doe\inst{2}}
+\author[芦, 王] % (optional)
+{芦迪 \and 王莘景}
 
-\institute[VFU] % (optional)
+\institute[THU, EE] % (optional)
 {
-  \inst{1}%
-  Faculty of Physics\\
-  Very Famous University
-  \and
-  \inst{2}%
-  Faculty of Chemistry\\
-  Very Famous University
+
+  Department of Electronic Engineering\\
+  Tsinghua University
 }
 
-\date[VLC 2014] % (optional)
-{Very Large Conference, April 2014}
+\date[2017.11.7] % (optional)
+{\today}
 
-\logo{\includegraphics[height=1.5cm]{lion-logo.png}}
+\logo{\includegraphics[height=1.5cm]{thuee-logo.png}}
 
 %End of title page configuration block
 %------------------------------------------------------------
@@ -45,7 +64,7 @@
 \AtBeginSection[]
 {
   \begin{frame}
-    \frametitle{Table of Contents}
+    \frametitle{目录}
     \tableofcontents[currentsection]
   \end{frame}
 }
@@ -62,26 +81,25 @@
 %This block of code is for the table of contents after
 %the title page
 \begin{frame}
-\frametitle{Table of Contents}
+\frametitle{目录}
 \tableofcontents
 \end{frame}
 %---------------------------------------------------------
 
 
-\section{First section}
+\section{实验任务}
 
 %---------------------------------------------------------
 %Changing visivility of the text
 \begin{frame}
-\frametitle{Sample frame title}
-This is a text in second frame. For the sake of showing an example.
+\frametitle{实验任务}
 
-\begin{itemize}
-    \item<1-> Text visible on slide 1
-    \item<2-> Text visible on slide 2
-    \item<3> Text visible on slides 3
-    \item<4-> Text visible on slide 4
-\end{itemize}
+\begin{enumerate}
+    \item 装调固体激光器使之产生激光，反复调整降低阈值
+    \item 测量固体激光器输出-输入能量关系曲线
+    \item 观察激光器的静态输出波形，
+    \item Text visible on slide 4
+\end{enumerate}
 \end{frame}
 
 %---------------------------------------------------------
@@ -98,7 +116,7 @@ And finally everything will be there
 \end{frame}
 %---------------------------------------------------------
 
-\section{Second section}
+\section{实验原理}
 
 %---------------------------------------------------------
 %Highlighting text
@@ -146,6 +164,10 @@ layout in some cases.
 \end{columns}
 \end{frame}
 %---------------------------------------------------------
+\section{实验系统}
+\section{方法步骤}
+\section{实验结果}
+\section{结果分析及结论}
 
 
 \end{document}

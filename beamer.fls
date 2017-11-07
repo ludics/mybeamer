@@ -237,8 +237,6 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/utopia.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/utopia.sty
 INPUT /usr/share/texlive/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
 INPUT /usr/share/texlive/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
@@ -250,6 +248,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/generic/unicode-data/CaseFolding.txt
 INPUT /usr/share/texlive/texmf-dist/tex/generic/unicode-data/SpecialCasing.txt
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/utopia.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/utopia.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/themes/theme/beamerthemeMadrid.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/themes/theme/beamerthemeMadrid.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemewhale.sty
