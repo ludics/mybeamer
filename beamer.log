@@ -1,10 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.11.6)  7 NOV 2017 14:33
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.9.26)  7 NOV 2017 14:38
 entering extended mode
- \write18 enabled.
- file:line:error style messages enabled.
+ restricted \write18 enabled.
  %&-line parsing enabled.
-**/home/leon/course/slides/beamer
-(/home/leon/course/slides/beamer.tex
+**beamer.tex
+(./beamer.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
@@ -1870,12 +1869,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 173.
  ) 
 Here is how much of TeX's memory you used:
- 34893 strings out of 493638
- 683754 string characters out of 6146796
- 709862 words of memory out of 5000000
+ 34892 strings out of 493638
+ 683681 string characters out of 6146796
+ 709859 words of memory out of 5000000
  37770 multiletter control sequences out of 15000+600000
  9113 words of font info for 54 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 56i,16n,64p,10475b,644s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,16n,64p,10454b,644s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on beamer.pdf (14 pages).
