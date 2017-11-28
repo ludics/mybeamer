@@ -7,6 +7,7 @@
 %\usepackage[UTF8,noindent]{ctexcap}
 \usepackage{latexsym,amssymb,amsmath,amsbsy,amsopn,amstext,xcolor,multicol}
 \usepackage{graphicx,wrapfig,fancybox}
+\usepackage{booktabs}
 % \usetheme{Rochester}
 \usetheme{Madrid}
 \usecolortheme{default}
@@ -169,132 +170,160 @@
 \section{实验系统}
 \begin{frame}{实验系统}
   \begin{itemize}
-    \item 实验所用SPR检测系统依据Kretchsmann棱镜型结构和波长调制原理搭建，主体结构为：
+    \item 实验所用SPR检测系统依据Kretchsmann棱镜型结构和波长调制原理搭建，主体结构如下：
     \begin{figure}
       \includegraphics[height=3.29cm,width=7cm]{images/2_3.png}
     \end{figure}
   \end{itemize}
   
 
-% \begin{block}{装置简述}
-%   \begin{description}
-
-%   \end{description}
-% \end{block}
+\begin{block}{装置简述}
+  \begin{description}
+    \item[入射光路] 宽谱光源 + 光纤 + 准直镜 + 偏振片，产生宽谱平行光
+    \item[传感探头] Kretchsmann棱镜型结构，采用金膜作为金属膜
+    \item[信号采集] 聚焦棱镜 + 多模光纤 + SMA接头 + 光纤光谱仪
+  \end{description}
+\end{block}
   
 \end{frame}
-
+\begin{frame}
+  \frametitle{实验系统}
+  \begin{figure}
+    \includegraphics[height=3.94cm,width=6.4cm]{images/2_4.png}
+    \caption{探头的结构}
+  \end{figure}
+\end{frame}
 
 \section{方法步骤}
 \begin{frame}{光路调整}
-  \begin{itemize}
-    \item 入射角调到自己需要的角度，这里就可以根据发射机上的角度刻度值实现
-    \item 可以调节棱镜和发射机的高度使得传感区位于棱镜底部的中心位置，这一步我们可以使用擦镜纸在棱镜两侧相同距离处观察光斑的垂直位置，基本保证两个光斑在同一竖直高度即可
-    \item 打开电脑光谱仪，接收棱镜反射回来的光，调整接收机使得收到的光谱尽量的大，这一步是实验中最困难的，我们要确保光线与接收机同轴，我们用擦镜纸在接收机接收处可以发现两个光斑，一个是棱镜反射传过来的，一个是接收机后光纤端面反射过来的，我们应调整接收机角度、高度，使得这两个光斑尽量重合与接收面中心处。如果觉得调整的比较理想但还是没有光谱就可以看着光谱微调
-  \end{itemize}
-\end{frame}
-\begin{frame}{放置金片}
   \begin{enumerate}
-    \item 注意清洁，先滴匹配油，再用镊子将金片放置在棱镜上，需要注意的是金片的正反面，用镊子轻轻划擦，能够看到痕迹的就是镀有金膜的一面，该面朝上即可
+    \item 入射角调到需要的角度，根据发射机上的角度刻度值实现
+    \item 调节棱镜和发射机的高度使得传感区位于棱镜底部的中心位置，使用擦镜纸在棱镜两侧相同距离处观察光斑的垂直位置，基本保证两个光斑在同一竖直高度即可
+    \item 打开电脑光谱仪，接收棱镜反射回来的光，调整接收机使得收到的光谱尽量的大。这一步是实验中最困难的，要确保光线与接收机同轴。接收机接收处可以发现两个光斑，分别为棱镜和接收机后光纤端面反射过来的，应调整接收机角度、高度，使得这两个光斑尽量重合与接收面中心处
   \end{enumerate}
 \end{frame}
-\begin{frame}{滴加液体}
-\begin{block}{注意}
-  \begin{itemize}
-    \item 将不滴液体时的光谱设置为参考光谱，滴加液体时需要注意不要滴加太多液体，只要让使液体覆盖传感区，即棱镜中心位置就可以了。再换液体时需要使用吸水纸吸掉液体，注意使用吸水纸时，尽量不要在水平方向用力，避免摩擦损坏金膜，此外还要注意滴加液体时使用移液枪实现
-  \end{itemize}
-\end{block}
-\end{frame}
-\begin{frame}{测量折射率}
-    \begin{itemize}
-      \item 用实验室的仪器测量，在老师的帮助下也是掌握了测量方法，测得了我们需要的数据
-    \end{itemize}
-  \end{frame}
+\begin{frame}{系统实验}
+  \begin{enumerate}
+    \item 设定棱镜全反射光作为参考光，用于波长域上归一化处理
+    \item 放置金膜：注意清洁，先滴匹配油，再用镊子将金片放置在棱镜上，注意将金属膜朝上放置
+    \item 将光谱仪软件调整至 transmission 状态，即显示归一化后结果
+    \item 在金属膜上滴加纯水、食盐水、苏打水等液体，观察并保存光谱图的变化，得到共振波长、共振半峰宽和共振深度
+  \end{enumerate}
+  \
 
+  \pause
+  时间所限，未对入射光角度、偏振态金膜厚度等因素对检测光谱特性的影响进行探究。
+\end{frame}
 
 \section{实验结果及分析}
 
-\begin{frame}{静态激光器输入输出关系曲线}
-  \begin{itemize}
-    \item 对实验测量得到的数据进行整理后，绘制出静态激光器输入输出关系曲线如下：
-    \begin{figure}
-      \includegraphics[height=4cm,width=8cm]{images/7.png}
-      \label{fg7}
-    \end{figure}
-    \item 对于静态固体激光器，输出能量与输入能量近似线性变化。这表明当激光器在这一区间工作时，输出能量与输入能量成线性关系。
-  \end{itemize}
-\end{frame}
 
-\begin{frame}{固体激光器静态输出波形}
-  \begin{itemize}
-    \item 取输入电压为700V，通过示波器观察驰豫振荡波形并测量其脉冲宽度，实验结果如下：
-    \begin{figure}
-      \includegraphics[height=3.92cm,width=5.14cm]{images/8.png}
-      \label{fg7}
-    \end{figure}
-    \item 可以看到确实产生了驰豫振荡，脉冲宽度利用手动光标测量测得约为\(241\mu s\)，符合我们的预期。
-  \end{itemize}
-\end{frame}
-\begin{frame}{调Q激光器输入输出能量关系曲线}
-  \begin{itemize}
-    \item 加入调Q晶体后，我们按照之前的方法重新测量了阈值，得到阈值约为670V，较之前相比有所提高。整理得到的数据，绘制出调Q激光器输入输出关系曲线如下：
-    \begin{figure}
-      \includegraphics[height=3.8cm,width=7.2cm]{images/9.png}
-      \label{fg7}
-    \end{figure}
-    \item 调Q时输入输出能量关系不再为线性，而是一种类似于阶梯的关系，与我们的理论推算相符。但可能图像采样点太少，阶梯不是太明显。
-  \end{itemize}
-\end{frame}
-
-
-\begin{frame}{固体激光器调Q输出波形}
-  \begin{itemize}
-    \item 添加调Q晶体后，改变输入电压并通过示波器测得此时的输出波形，同时观测脉冲个数，观测结果：
-    \begin{figure}[htbp]
+\begin{frame}{各液体光谱图像}
+  \begin{figure}[htbp]
+    \centering
+    \begin{minipage}[htbp]{180pt}
       \centering
-      \begin{minipage}[htbp]{80pt}
-        \centering
-        \includegraphics[width=80pt]{images/10.jpg}
-        \caption{700V}
-        \label{fig:4}
-      \end{minipage}
-      \hspace{10pt}%
-      \begin{minipage}[htpb]{80pt}
-        \centering
-        \includegraphics[width=80pt]{images/11.jpg}
-        \caption{750V}
-        \label{fig:5}
-      \end{minipage}
-      \hspace{10pt}%
-      \begin{minipage}[htpb]{80pt}
-        \centering
-        \includegraphics[width=80pt]{images/12.jpg}
-        \caption{850V}
-        \label{fig:5}
-      \end{minipage}
-      \end{figure}
-    \item 随着输入电压增加，脉冲个数会呈阶梯状提高，应证了我们上一步得到的阶梯曲线。
+      \includegraphics[width=180pt]{images/3_1.png}
+    \end{minipage}
+    \hspace{10pt}%
+    \begin{minipage}[htpb]{180pt}
+      \centering
+      \includegraphics[width=180pt]{images/3_2.png}
+    \end{minipage}
+    \end{figure}
+\end{frame}
+\begin{frame}{各液体光谱图像}
+  \begin{figure}[htbp]
+    \centering
+    \begin{minipage}[htbp]{180pt}
+      \centering
+      \includegraphics[width=180pt]{images/3_3.png}
+    \end{minipage}
+    \hspace{10pt}%
+    \begin{minipage}[htpb]{180pt}
+      \centering
+      \includegraphics[width=180pt]{images/3_4.png}
+    \end{minipage}
+    \end{figure}
+\end{frame}
+\begin{frame}{各液体光谱图像}
+  \begin{figure}[htbp]
+    \centering
+    \begin{minipage}[htbp]{180pt}
+      \centering
+      \includegraphics[width=180pt]{images/3_5.png}
+    \end{minipage}
+    \hspace{10pt}%
+    \begin{minipage}[htpb]{180pt}
+      \centering
+      \includegraphics[width=180pt]{images/3_6.png}
+    \end{minipage}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{各液体光谱图像}
+  \begin{figure}
+    \includegraphics[width=180pt]{images/3_7.png}
+  \end{figure} 
+  将数据总结，表格如下：
+  \begin{table}
+    \scriptsize
+  \begin{tabular}{rlllllll}
+    \toprule
+    液体& 纯水& 5\%苏打& 10\%苏打& 10\%盐水& 15\%盐水& 20\%盐水& 乙酸\\
+    \midrule
+    折射率& 1.335& 1.3405& 1.3460& 1.3501& 1.3571& 1.3683& 1.375\\
+    共振波长& 595& 606& 617& 620& 635& 644& 659\\
+    共振深度& 34.2& 45& 46.2& 38.1& 40& 49.9& 55\\
+    共振宽度& 45& 51& 52& 45& 50& 53& 53\\
+    \bottomrule
+    \end{tabular}
+  \end{table}
+\end{frame}
+
+\begin{frame}{实验数据}
+
+  绘制图像为：
+  \begin{figure}
+    \includegraphics[width=180pt]{images/2_8.png}
+  \end{figure}
+  共振波长呈单调递增趋势，与理论仿真是相符合的。
+\end{frame}
+
+\begin{frame}
+  \frametitle{实验图像}
+  \begin{figure}
+    \includegraphics[width=180pt]{images/2_9.png}
+  \end{figure}
+  \begin{figure}
+    \includegraphics[width=180pt]{images/2_10.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{实验分析}
+  \begin{itemize}
+    \item 共振深度和共振半峰宽度理论上也应该是单调递增关系，但是我们测得的数据却有两个不正常的点，是5\%的苏打水和10\%的苏打水
+    \item 之所这两个点偏离了曲线，是因为我们在测量完盐水和乙酸后，去测苏打水时，觉得金片受溶液污染较严重，于是重新拿下来清洗后再放上去重新调光路
+    \item 在这一步我们犯的错误就是改变了参考光，理论上在这个实验中，为了控制变量，我们必须保证测所有液体时参考光是不变的，一旦改变参考光，对于实验结果会有很大的影响
   \end{itemize}
 \end{frame}
 
-\begin{frame}{调Q激光器输入输出能量关系曲线}
+\section{总结反思}
+
+\begin{frame}
+  \frametitle{遇到的问题}
   \begin{itemize}
-    \item 将 700V时的波形在脉冲处展开，得到的更加细致的波形为：
-    \begin{figure}
-      \includegraphics[height=4cm,width=5cm]{images/13.jpg}
-      \label{fg7}
-    \end{figure}
-    \item 调整横纵坐标尺度使得脉冲尽量展开，然后利用手动测量测得单脉冲波形半高全宽约为14ns，符合我们的理论预期
+    \item 调整光路时，始终测不到光谱值，尽管在接收处已经看到光斑，还是看不到光谱。在老师的指点下，我们知道我们首先需要调整接收机与光线同轴，需要用擦镜纸在接收处观察棱镜反射过来的光斑和光纤端面反射过来的光斑，将二者调整到重合与接收面中心处。然后，我们可以先将光纤拆下来，在接收机后用擦镜纸观察是否有光线透射出来，是否在光纤端面中心，调整后再将光纤接上，最后观察到光谱之后再进行微调，尽量使得光谱值最大
+    \item 实验中，发现被测液体的滴加数量对实验图像也有较大影响，不知道应控制在多少合适，问过老师后才知道其实只要液体将棱镜的传感区覆盖即可，实验中要求的是将其调整至中心，我们开始忽略了这一点，后来调整后就改进了许多
   \end{itemize}
 \end{frame}
-\begin{frame}{谐振腔调制精度对激光器性能的影响}
+\begin{frame}
+  \frametitle{心得收获}
   \begin{itemize}
-    \item 调偏全反膜，通过目测望远镜视野中叉丝偏离的距离来表示角度偏离，取电压为700V，将得到的数据绘制为曲线：
-    \begin{figure}
-      \includegraphics[height=3cm,width=5.5cm]{images/14.png}
-      \label{fg7}
-    \end{figure}
-    \item 在固定输入能量的情况下，随着谐振腔的偏差，输出能量衰减，且开始时衰减得更剧烈。由于我们取的步长太大，这里并没有表现出微调时的结果。
+    \item 思考问题、解决问题的能力
+    \item 面对困难问题的心态调整能力
+    \item 合作协助的重要性
   \end{itemize}
 \end{frame}
 
@@ -302,9 +331,7 @@
 \begin{frame}
     \begin{figure}
       \includegraphics[height=2.23cm,width=4.29cm]{images/thank.jpg}
-      \label{fg7}
-    \end{figure}
-   
+    \end{figure} 
 \end{frame}
 \end{document}
 
