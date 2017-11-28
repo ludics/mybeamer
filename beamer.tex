@@ -7,7 +7,8 @@
 %\usepackage[UTF8,noindent]{ctexcap}
 \usepackage{latexsym,amssymb,amsmath,amsbsy,amsopn,amstext,xcolor,multicol}
 \usepackage{graphicx,wrapfig,fancybox}
-\usetheme{Rochester}
+% \usetheme{Rochester}
+\usetheme{Madrid}
 \usecolortheme{default}
  % 衬线字体：Linux Libertine
     % BoldFont 可以选择 Bold 字重或者 Semibold 字重
@@ -34,23 +35,22 @@
 %------------------------------------------------------------
 %This block of code defines the information to appear in the
 %Title page
-\title[光电中期报告] %optional
+\title[光电报告] %optional
 {光电子技术实验}
 
-\subtitle{固体激光器的静态特性及调Q技术}
+\subtitle{波长检测型表面等离子体共振 (SPR) 传感}
 
 \author[芦, 王] % (optional)
 {芦迪 \and 王莘景}
 
 \institute[THU, EE] % (optional)
 {
-
   Department of Electronic Engineering,\\
   Tsinghua University
 }
 
-\date[2017.11.8] % (optional)
-{\today}
+\date[2017.11.29] % (optional)
+{November 29, 2017}
 
 \logo{\includegraphics[height=1.5cm]{images/thuee-logo.png}}
 
@@ -92,30 +92,21 @@
 
 %---------------------------------------------------------
 %Changing visivility of the text
-\begin{frame}
-\frametitle{实验任务}
-
-本次实验的实验目的为：
-\begin{enumerate}
-  \item 掌握固体激光器与调 Q 工作原理
-  \item 掌握固体激光器的调节方法，了解谐振腔参数及调节精度对激光器性能的影响
-  \item 测量固体激光器的静态输出特性和调Q输出特性
-  \item 掌握用于固体激光器调整和测量仪器的使用方法
-\end{enumerate}
-\end{frame}
-
-\begin{frame}
-  \frametitle{实验任务}
-为达到以上目的，实验设计了如下任务： \\
-
-\begin{enumerate}
-    \item 装调固体激光器使之产生激光，反复调整降低阈值
-    \item 测量固体激光器输出-输入能量关系曲线
-    \item 观察激光器的静态输出波形，记录其波形与总宽度
-    \item 测量固体激光器调Q输出波形，改变输入能量观察输出脉冲个数
-    \item 测量固体激光器调Q输出-输入能量关系曲线并分析其特点
-    \item 观测谐振腔调制精度对激光器的影响
-\end{enumerate}
+\begin{frame}{实验任务}
+  本次实验的实验目的为：
+  \begin{enumerate}
+    \item 了解表面等离子体共振（SPR）波长检测原理
+    \item 了解实现波长检测表面等离子体共振检测的系统结构
+    \item 结合理论分析结果，探索研究影响系统检测性能的各项因素
+  \end{enumerate}
+  \
+  
+  \pause
+  为达到以上目的，实验设计了如下任务：
+  \begin{enumerate}
+      \item 利用波长调整型 SPR 传感系统对纯水、苏打水和食盐水等物质进行检测，得到检测光谱
+      \item 探索研究入射光角度、偏振态、金膜厚度等因素对检测光谱特性的影响
+  \end{enumerate}
 \end{frame}
 
 %---------------------------------------------------------
@@ -137,123 +128,89 @@
 
 %---------------------------------------------------------
 %Highlighting text
-\begin{frame}{固体激光器工作原理}
+\begin{frame}{检测原理}
 % \frametitle
-固体激光器的结构如图：
+\begin{itemize}
+  \item 表面等离子体共振(简称SPR)是一种物理光学现象，利用光在玻璃界面处发生全内反射时的消逝波，激发出沿金属薄膜表面传播的表面等离子体波(SPW)
+  \item 在入射角或波长为某一适当值的条件下，入射光与 SPW 发生共振，此时全反射的反射光能量急剧下降，在反射光谱上出现共振吸收峰
+\end{itemize}
 \begin{figure}
-  \includegraphics[height=3cm,width=5cm]{images/1.jpg}
-  \label{fg1}
+  \includegraphics[height=2.86cm,width=4.29cm]{images/2_2.png}
+  \caption{棱镜型 SPR 传感器结构}
 \end{figure}
-本实验采用的工作物质为 \(\rm Nd:YAG\)，激活离子为\(\rm Nd^{3+}\)，激光输出波长为\(1.06\mu m\)。
 \end{frame}
-\begin{frame}{固体激光器工作原理}
-  钕离子的能级示意图为：
+\begin{frame}{检测原理}
+  \begin{itemize}
+    \item 当紧靠在金属薄膜表面的介质折射率不同时, 共振峰位置将不同
+    \item SPR 的共振峰位置与被测介质的性质密切相关, 根据对这个信号的检测就可以获得被测物质的折射率、浓度、膜层厚度、反应进程等信息, 从而达到生化检测的目的
+  \end{itemize}
   \begin{figure}
-    \includegraphics[height=3cm,width=4cm]{images/2.jpg}
-    \label{fg2}
+    \includegraphics[height=3.575cm,width=5.304cm]{images/2_1.png}
+    \caption{波长调制检测方法对不同物质检测的仿真结果}
   \end{figure}
-  \begin{itemize}
-    \item 在光泵激励下，钕离子容易在\(\rm E_3\)和\(\rm E_2\)之间形成集聚数反转，实现受激辐射。
-    \item 激光器形成自激震荡的条件是\(G^0 \times l \geq \alpha L \)
-    \item 静态激光器输出的光脉冲为一群尖峰脉冲序列，称为激光弛豫震荡
-  \end{itemize}
-  
 \end{frame}
-\begin{frame}{调Q工作原理}
-  \begin{itemize}
-    \item 静态激光器因为弛豫震荡，输出功率受到限制。
-    \item 采用调Q技术可以使激光能量集中到单脉冲，峰值功率可达兆瓦以上。
-    \item 调Q晶体的吸收系数与入射光强之间的关系为：
-    \begin{figure}
-      \includegraphics[height=3cm,width=4cm]{images/4.jpg}
-      \label{fg2}
-    \end{figure}
-  \end{itemize}
-  
-
-
-  \begin{itemize}
-    \item 光强较弱时，调Q吸收系数大，无法产生激光
-    \item 光强增大到一定程度后，调Q吸收系数降低，受激辐射光强急剧增长
-  \end{itemize}
-  
-\end{frame}
-
-\begin{frame}{调Q工作原理}
-  \begin{itemize}
-    \item 燃料调Q激光器能量输出特性为：
-    \begin{figure}
-      \includegraphics[height=3cm,width=4cm]{images/5.jpg}
-      \label{fg2}
-    \end{figure}
-  \end{itemize}
-  
-
-\begin{block}{重要概念}
-  \begin{itemize}
-    \item 调Q晶体初始透过率
-    \item 调Q效率/动静比
-  \end{itemize}
-\end{block}
-  
-\end{frame}
-
 
 %---------------------------------------------------------
 % 
 %---------------------------------------------------------
+
+\section{理论仿真}
+\begin{frame}{理论仿真}
+  利用MATLAB软件对波长检测型SPR传感结果进行仿真，并研究了实验条件对检测结果的影响，用以对实验条件建设提供理论依据。结论如下：
+  \begin{enumerate}
+    \item 当被测物质一定时，入射角变小，共振波长变大，共振半峰宽度变大，共振深度增大灵敏度变大。
+    \item 当入射角度不变时，被测物质折射率增大，共振波长变大，共振半峰宽度变大，共振深度增大，灵敏度变大。
+    \item 存在一个合适大小的金属膜厚度使得实验效果最好，反射率最低点最低吸收效果最好而且半峰宽较窄。本次仿真中的最佳结果为 50nm，当厚度小于 50 时半峰宽较大而且吸收峰的共振深度较小；当厚度大于 50nm 时半峰宽降低但是吸收峰共振深度也减小。
+    \item 入射角度的改变会使得被测物质的检测范围发生改变。入射角度变大，检测范围变大，检测灵敏度变小。
+  \end{enumerate}
+  
+\end{frame}
+
 \section{实验系统}
 \begin{frame}{实验系统}
   \begin{itemize}
-    \item 实验装置为：
+    \item 实验所用SPR检测系统依据Kretchsmann棱镜型结构和波长调制原理搭建，主体结构为：
     \begin{figure}
-      \includegraphics[height=3cm,width=7.5cm]{images/6.jpg}
-      \label{fg2}
+      \includegraphics[height=3.29cm,width=7cm]{images/2_3.png}
     \end{figure}
   \end{itemize}
   
 
-\begin{block}{装置简述}
-  \begin{description}
-    \item[激光器] 分离式结构；采用平行平面腔  
-    \item[能量计] 测量脉冲能量
-    \item[光电探测器] 灵敏度高，脉冲强激光刺激下饱和，需要加衰减
-  \end{description}
-\end{block}
+% \begin{block}{装置简述}
+%   \begin{description}
+
+%   \end{description}
+% \end{block}
   
 \end{frame}
 
 
 \section{方法步骤}
-\begin{frame}{光路校准}
+\begin{frame}{光路调整}
   \begin{itemize}
-    \item \alert{粗调} 用 He-Ne 激光器准直固体激光器的钕玻璃棒和反射膜片，调整各元件使它们轴向对中并使它们对 He-Ne 激光的反射光斑基本重合
-    \item \alert{细调} 用内调焦望远镜细调光路，将各元件调整到严格平行。从望远镜中可以看到几个十字叉丝，其中最亮的叉丝是全反膜反射回来的，最暗的叉丝是半反膜反射回来的，我们只需要调整激光器使得这两个叉丝尽量重合即可
-    
+    \item 入射角调到自己需要的角度，这里就可以根据发射机上的角度刻度值实现
+    \item 可以调节棱镜和发射机的高度使得传感区位于棱镜底部的中心位置，这一步我们可以使用擦镜纸在棱镜两侧相同距离处观察光斑的垂直位置，基本保证两个光斑在同一竖直高度即可
+    \item 打开电脑光谱仪，接收棱镜反射回来的光，调整接收机使得收到的光谱尽量的大，这一步是实验中最困难的，我们要确保光线与接收机同轴，我们用擦镜纸在接收机接收处可以发现两个光斑，一个是棱镜反射传过来的，一个是接收机后光纤端面反射过来的，我们应调整接收机角度、高度，使得这两个光斑尽量重合与接收面中心处。如果觉得调整的比较理想但还是没有光谱就可以看着光谱微调
   \end{itemize}
 \end{frame}
-\begin{frame}{激光发射}
+\begin{frame}{放置金片}
   \begin{enumerate}
-    \item 将光路调整的比较理想之后，在老师指导下学习固体激光器电源的使用方法，然后发射激光
-    \item 测量阈值时，将一张黑纸放置在激光发射口，然后增大输入功率（即电压），直到黑纸上恰好出现白点，此时的输入能量即为阈值
+    \item 注意清洁，先滴匹配油，再用镊子将金片放置在棱镜上，需要注意的是金片的正反面，用镊子轻轻划擦，能够看到痕迹的就是镀有金膜的一面，该面朝上即可
   \end{enumerate}
-  本次实验，我们测得的阈值电压为 560V。
 \end{frame}
-\begin{frame}{数据测量}
-\begin{block}{输入输出能量关系曲线}
+\begin{frame}{滴加液体}
+\begin{block}{注意}
   \begin{itemize}
-    \item 改变输入电压，输入能量可由输入电压换算得到，输出能量用光能量计测量，进而可以画出二者的关系曲线。
+    \item 将不滴液体时的光谱设置为参考光谱，滴加液体时需要注意不要滴加太多液体，只要让使液体覆盖传感区，即棱镜中心位置就可以了。再换液体时需要使用吸水纸吸掉液体，注意使用吸水纸时，尽量不要在水平方向用力，避免摩擦损坏金膜，此外还要注意滴加液体时使用移液枪实现
   \end{itemize}
 \end{block}
-\begin{block}{波形观察与参数测量}
-  \begin{itemize}
-    \item 使用连接示波器的光电探测器观测波形。需对激光进行衰减以避免光强太大导致的探测器饱和失真，先利用纸片进行漫反射，再用光电探测器接收反射信号。
-    \item 需要注意必须让示波器位于单次触发模式。由于输出脉冲为正极性，我们应将触发电平调整为正值。
-    \item 测量波形宽度，将波形在脉冲处展开，调节横纵坐标尺度得到比较合适测量的波形，再用手动光标进行测量。
-  \end{itemize}
- 
-\end{block}
 \end{frame}
+\begin{frame}{测量折射率}
+    \begin{itemize}
+      \item 用实验室的仪器测量，在老师的帮助下也是掌握了测量方法，测得了我们需要的数据
+    \end{itemize}
+  \end{frame}
+
 
 \section{实验结果及分析}
 

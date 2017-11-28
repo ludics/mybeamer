@@ -1,6 +1,7 @@
 \beamer@endinputifotherversion {3.36pt}
 \beamer@sectionintoc {1}{实验任务}{3}{0}{1}
 \beamer@sectionintoc {2}{实验原理}{6}{0}{2}
-\beamer@sectionintoc {3}{实验系统}{11}{0}{3}
-\beamer@sectionintoc {4}{方法步骤}{13}{0}{4}
-\beamer@sectionintoc {5}{实验结果及分析}{17}{0}{5}
+\beamer@sectionintoc {3}{理论仿真}{9}{0}{3}
+\beamer@sectionintoc {4}{实验系统}{11}{0}{4}
+\beamer@sectionintoc {5}{方法步骤}{13}{0}{5}
+\beamer@sectionintoc {6}{实验结果及分析}{18}{0}{6}

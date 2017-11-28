@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.9.26)  7 NOV 2017 21:47
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.11.6)  28 NOV 2017 17:10
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/leon/repertory/Documents/latex/my-beamer/beamer
-(/home/leon/repertory/Documents/latex/my-beamer/beamer.tex
+**/home/leon/course/slides/beamer
+(/home/leon/course/slides/beamer.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
@@ -1562,20 +1562,10 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \Verbatim@Outfile=\write5
 \Verbatim@Infile=\read3
 )
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/theme/beamerthemeRochest
-er.sty
-Package: beamerthemeRochester 2010/06/17  (rcs-revision d02a7cf4d8ae)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/theme/beamerthemeMadrid.
+sty
+Package: beamerthemeMadrid 2010/06/17  (rcs-revision d02a7cf4d8ae)
 
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/outer/beamerouterthemesi
-debar.sty
-Package: beamerouterthemesidebar 2010/06/17  (rcs-revision d02a7cf4d8ae)
-\beamer@sidebarwidth=\dimen314
-\beamer@headheight=\dimen315
-)
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerthemere
-ctangles.sty
-Package: beamerinnerthemerectangles 2010/06/17  (rcs-revision d02a7cf4d8ae)
-)
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemewh
 ale.sty
 Package: beamercolorthemewhale 2010/06/17  (rcs-revision d02a7cf4d8ae)
@@ -1583,6 +1573,14 @@ Package: beamercolorthemewhale 2010/06/17  (rcs-revision d02a7cf4d8ae)
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemeor
 chid.sty
 Package: beamercolorthemeorchid 2010/06/17  (rcs-revision d02a7cf4d8ae)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerthemero
+unded.sty
+Package: beamerinnerthemerounded 2010/06/17  (rcs-revision d02a7cf4d8ae)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/outer/beamerouterthemein
+folines.sty
+Package: beamerouterthemeinfolines 2012/10/16  (rcs-revision 51a8c72084af)
 ))
 *************************************************
 * xeCJK warning: "CJKfamily-Unknown"
@@ -1625,15 +1623,6 @@ Package: beamercolorthemeorchid 2010/06/17  (rcs-revision d02a7cf4d8ae)
 . - 'small caps'  (m/sc) with NFSS spec.: 
 .................................................
 (./beamer.aux
-
-LaTeX Warning: Label `fg2' multiply defined.
-
-
-LaTeX Warning: Label `fg2' multiply defined.
-
-
-LaTeX Warning: Label `fg2' multiply defined.
-
 
 LaTeX Warning: Label `fg7' multiply defined.
 
@@ -1688,14 +1677,14 @@ LaTeX Font Info:    ... okay on input line 76.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(28.45274pt, 307.28987pt, 28.45274pt)
+* h-part:(L,W,R)=(10.95pt, 342.29536pt, 10.95pt)
 * v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
 * \paperwidth=364.19536pt
 * \paperheight=273.14662pt
-* \textwidth=307.28987pt
+* \textwidth=342.29536pt
 * \textheight=244.6939pt
-* \oddsidemargin=-43.81725pt
-* \evensidemargin=-43.81725pt
+* \oddsidemargin=-61.31999pt
+* \evensidemargin=-61.31999pt
 * \topmargin=-72.26999pt
 * \headheight=14.22636pt
 * \headsep=0.0pt
@@ -1893,72 +1882,36 @@ File: images/thuee-logo.png Graphic file (type QTm)
 <use  "images/thuee-logo.png" > [6
 
 ]
-File: images/1.jpg Graphic file (type QTm)
- <use  "images/1.jpg" >
-LaTeX Font Info:    Try loading font information for EU1+put on input line 148.
-
-LaTeX Font Info:    No file EU1put.fd. on input line 148.
-
-
-LaTeX Font Warning: Font shape `EU1/put/m/n' undefined
-(Font)              using `EU1/lmr/m/n' instead on input line 148.
-
-LaTeX Font Info:    Try loading font information for U+msa on input line 148.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 148.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for U+lasy on input line 148.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-LaTeX Font Info:    Font shape `EU1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `EU1/lmss/m/sl' tried instead on input line 148.
-
-LaTeX Font Info:    Font shape `EU1/lmss/m/it' in size <8> not available
-(Font)              Font shape `EU1/lmss/m/sl' tried instead on input line 148.
-
-LaTeX Font Info:    Font shape `EU1/lmss/m/it' in size <6> not available
-(Font)              Font shape `EU1/lmss/m/sl' tried instead on input line 148.
-
+File: images/2_2.png Graphic file (type QTm)
+ <use  "images/2_2.png" >
 File: images/thuee-logo.png Graphic file (type QTm)
 
 <use  "images/thuee-logo.png" > [7
 
 ]
-File: images/2.jpg Graphic file (type QTm)
- <use  "images/2.jpg" >
+File: images/2_1.png Graphic file (type QTm)
+ <use  "images/2_1.png" >
 File: images/thuee-logo.png Graphic file (type QTm)
 
 <use  "images/thuee-logo.png" > [8
 
-]
-File: images/4.jpg Graphic file (type QTm)
- <use  "images/4.jpg" >
+] (./beamer.toc)
 File: images/thuee-logo.png Graphic file (type QTm)
 
 <use  "images/thuee-logo.png" > [9
 
 ]
-File: images/5.jpg Graphic file (type QTm)
- <use  "images/5.jpg" >
 File: images/thuee-logo.png Graphic file (type QTm)
-
-<use  "images/thuee-logo.png" > [10
-
-] (./beamer.toc)
-File: images/thuee-logo.png Graphic file (type QTm)
-
-<use  "images/thuee-logo.png" > [11
+ <use  "images/thuee-logo.png" > [10
 
 ]
-File: images/6.jpg Graphic file (type QTm)
- <use  "images/6.jpg" >
+(./beamer.toc)
+File: images/thuee-logo.png Graphic file (type QTm)
+ <use  "images/thuee-logo.png" > [11
+
+]
+File: images/2_3.png Graphic file (type QTm)
+ <use  "images/2_3.png" >
 File: images/thuee-logo.png Graphic file (type QTm)
 
 <use  "images/thuee-logo.png" > [12
@@ -1982,30 +1935,66 @@ File: images/thuee-logo.png Graphic file (type QTm)
  <use  "images/thuee-logo.png" > [16
 
 ]
-(./beamer.toc)
 File: images/thuee-logo.png Graphic file (type QTm)
- <use  "images/thuee-logo.png" > [17
+
+<use  "images/thuee-logo.png" > [17
+
+] (./beamer.toc)
+File: images/thuee-logo.png Graphic file (type QTm)
+
+<use  "images/thuee-logo.png" > [18
 
 ]
 File: images/7.png Graphic file (type QTm)
  <use  "images/7.png" >
 File: images/thuee-logo.png Graphic file (type QTm)
 
-<use  "images/thuee-logo.png" > [18
+<use  "images/thuee-logo.png" > [19
 
 ]
 File: images/8.png Graphic file (type QTm)
  <use  "images/8.png" >
+LaTeX Font Info:    Try loading font information for EU1+put on input line 237.
+
+LaTeX Font Info:    No file EU1put.fd. on input line 237.
+
+
+LaTeX Font Warning: Font shape `EU1/put/m/n' undefined
+(Font)              using `EU1/lmr/m/n' instead on input line 237.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 237.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 237.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 237.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Font shape `EU1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `EU1/lmss/m/sl' tried instead on input line 237.
+
+LaTeX Font Info:    Font shape `EU1/lmss/m/it' in size <8> not available
+(Font)              Font shape `EU1/lmss/m/sl' tried instead on input line 237.
+
+LaTeX Font Info:    Font shape `EU1/lmss/m/it' in size <6> not available
+(Font)              Font shape `EU1/lmss/m/sl' tried instead on input line 237.
+
 File: images/thuee-logo.png Graphic file (type QTm)
 
-<use  "images/thuee-logo.png" > [19
+<use  "images/thuee-logo.png" > [20
 
 ]
 File: images/9.png Graphic file (type QTm)
  <use  "images/9.png" >
 File: images/thuee-logo.png Graphic file (type QTm)
 
-<use  "images/thuee-logo.png" > [20
+<use  "images/thuee-logo.png" > [21
 
 ]
 File: images/10.jpg Graphic file (type QTm)
@@ -2017,28 +2006,28 @@ File: images/12.jpg Graphic file (type QTm)
  <use  "images/12.jpg" >
 File: images/thuee-logo.png Graphic file (type QTm)
 
-<use  "images/thuee-logo.png" > [21
+<use  "images/thuee-logo.png" > [22
 
 ]
 File: images/13.jpg Graphic file (type QTm)
  <use  "images/13.jpg" >
 File: images/thuee-logo.png Graphic file (type QTm)
 
-<use  "images/thuee-logo.png" > [22
+<use  "images/thuee-logo.png" > [23
 
 ]
 File: images/14.png Graphic file (type QTm)
  <use  "images/14.png" >
 File: images/thuee-logo.png Graphic file (type QTm)
 
-<use  "images/thuee-logo.png" > [23
+<use  "images/thuee-logo.png" > [24
 
 ]
 File: images/thank.jpg Graphic file (type QTm)
  <use  "images/thank.jpg" >
 File: images/thuee-logo.png Graphic file (type QTm)
 
-<use  "images/thuee-logo.png" > [24
+<use  "images/thuee-logo.png" > [25
 
 ]
 \tf@nav=\write7
@@ -2050,11 +2039,11 @@ File: images/thuee-logo.png Graphic file (type QTm)
 \tf@snm=\write9
 \openout9 = `beamer.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 352.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 352.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 309.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 309.
  (./beamer.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 352.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 352.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 309.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 309.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2062,15 +2051,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 352.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 309.
  ) 
 Here is how much of TeX's memory you used:
- 35310 strings out of 493638
- 690447 string characters out of 6146796
- 705671 words of memory out of 5000000
- 38150 multiletter control sequences out of 15000+600000
- 9439 words of font info for 58 fonts, out of 8000000 for 9000
+ 35369 strings out of 493638
+ 692304 string characters out of 6146796
+ 712695 words of memory out of 5000000
+ 38209 multiletter control sequences out of 15000+600000
+ 9455 words of font info for 60 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 56i,15n,63p,10497b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,16n,64p,10475b,666s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on beamer.pdf (24 pages).
+Output written on beamer.pdf (25 pages).
