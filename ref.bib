@@ -1,0 +1,48 @@
+@inproceedings{antonakakis2010building,
+  title={Building a Dynamic Reputation System for DNS.},
+  author={Antonakakis, Manos and Perdisci, Roberto and Dagon, David and Lee, Wenke and Feamster, Nick},
+  booktitle={USENIX security symposium},
+  pages={273--290},
+  year={2010}
+}
+@article{Antonakakis2010,
+abstract = {The Domain Name System (DNS) is an essential protocol used by both legitimate Internet applications and cyber attacks. For example, botnets rely on DNS to support agile command and control infrastructures. An effective way to disrupt these attacks is to place malicious domains on a blocklist (or blacklist) or to add a filtering rule in a firewall or network intrusion detection system. To evade such security countermeasures, attackers have used DNS agility, e.g., by using new domains daily to evade static blacklists and firewalls. In this paper we propose Notos, a dynamic reputation system for DNS. The premise of this system is that malicious, agile use of DNS has unique characteristics and can be distinguished from legitimate, professionally provisioned DNS services. Notos uses passive DNS query data and analyzes the network and zone features of domains. It builds models of known legitimate domains and malicious domains, and uses these models to compute a reputation score for a new domain indicative of whether the domain is malicious or legitimate. We have evaluated Notos in a large ISPs network with DNS traffic from 1.4 million users. Our results show that Notos can identify malicious domains with high accuracy (true positive rate of 96.8{\%}) and low false positive rate (0.38{\%}), and can identify these domains weeks or even months before they appear in public blacklists.},
+author = {Antonakakis, Manos and Perdisci, Roberto and Dagon, David and Lee, Wenke and Feamster, Nick},
+doi = {10.1145/2584679},
+file = {:home/leon/course/DNS/Antonakakis.pdf:pdf},
+isbn = {8887666655554},
+issn = {10949224},
+journal = {USENIX Security'10: Proceedings of the 19th USENIX conference on Security},
+mendeley-groups = {DNS},
+pages = {1--17},
+title = {{Building a Dynamic Reputation System for DNS}},
+url = {http://www.usenix.org/events/sec10/tech/full{\_}papers/Antonakakis.pdf},
+year = {2010}
+}
+@article{Dagon2008,
+abstract = {We study and document an important development in how attackers are using Internet resources: the creation of mali- cious DNS resolution paths. In this growing form of attack, victims are forced to use rogue DNS servers for all resolu- tion. To document the rise of this “second secret authority” on the Internet, we studied instances of aberrant DNS resolu- tion on a university campus. We found dozens of viruses that corrupt resolution paths, and noted that hundreds ofURLs dis- covered per week performed drive-by alterations of host DNS settings. We used the rogue servers discovered in this analy- sis to document numerous live incidents on the university net- work. To measure this problem on the larger Internet, we gen- erated DNS requests to most of IPv4, using a unique label query for each request. We found 17 million hosts responding, and further tracked the resolution path they used to reach our NS. Unable to find plausible harmless explanations for such a large number of open recursive hosts, we queried 600,000 of these open resolvers for “phishable” domains, such as banks and anti-virus companies. We found that 2.4{\%}of this subsam- ple would reply with incorrect answers, which extrapolates to 291,528 hosts on the Internet performing either incorrect or malicious DNS service. With DNS resolution behavior so triv- ially changed, numerousmalware instances in the wild, and so many other hosts providing incorrect andmisleading answers, we urge the security community to consider the corruption of the resolution path as an important problem.},
+author = {Dagon, David and Provos, Niels and Lee, Cp and Lee, Wenke},
+doi = {10.1.1.92.7470},
+file = {:home/leon/course/DNS/ndss08{\_}dns.pdf:pdf},
+journal = {Ndss},
+mendeley-groups = {DNS},
+title = {{Corrupted dns resolution paths: The rise of a malicious resolution authority}},
+url = {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.92.7470{\&}rep=rep1{\&}type=pdf},
+volume = {1},
+year = {2008}
+}
+@article{Yan2006,
+abstract = {DNS is a critical component of the operation of Internet applications. The Internet is greatly affected if DNS is attacked. DNS spoofing is one of the most popular attack means with the character of high dormancy and good attack effect. But so far, little is done to defend the system against this attack. Three methods are presented to detect DNS spoofing attack, and then another three techniques are proposed to identify the bogus packets and the right ones to ensure DNS service even attacked.},
+author = {Yan, Boru and Fang, Binxing and Li, Bin and Wang, Yao},
+file = {:home/leon/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Yan et al. - 2006 - Detection and defence of DNS spoofing attack(2).pdf:pdf},
+issn = {10003428},
+journal = {Jisuanji GongchengComputer Engineering},
+keywords = {attack detection,dns,dns spoofing,domain name system},
+mendeley-groups = {DNS},
+number = {21},
+pages = {130 -- 132+135},
+title = {{Detection and defence of DNS spoofing attack}},
+url = {http://www.scopus.com/inward/record.url?eid=2-s2.0-33846178631{\&}partnerID=40{\&}md5=91b62b2bafcdf8e23f652a93bb153245},
+volume = {32},
+year = {2006}
+}
