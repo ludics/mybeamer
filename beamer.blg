@@ -2,10 +2,10 @@ This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: beamer.aux
 The style file: unsrt.bst
-Database file #1: ref.bib.bib
+Database file #1: ref.bib
 You've used 2 entries,
             1791 wiz_defined-function locations,
-            462 strings with 3911 characters,
+            462 strings with 3907 characters,
 and the built_in function-call counts, 587 in all, are:
 = -- 51
 > -- 31
