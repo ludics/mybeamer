@@ -61,12 +61,12 @@
 %This block of code defines the information to appear in the
 %Title page
 \title[毕设开题] %optional
-{基于域名解析数据的DNS劫持分析}
+{基于域名解析数据分析的DNS安全现状评估与安全增强}
 
 % \subtitle{波长检测型表面等离子体共振 (SPR) 传感}
 
 \author[芦迪] % (optional)
-{芦迪 }
+{无41 芦迪 }
 
 \institute[THU, EE] % (optional)
 {
@@ -124,62 +124,70 @@
 \begin{frame}{DNS介绍}
   DNS：Domain Name System
   \begin{itemize}
-    \item 一个分层的分布式命名系统，将域名转换为IP地址
-    \item 指定每个域的权威域名服务器分配域名，层层分配
+    \item 将易于记忆的域名转换为枯燥难记的IP地址
+    \item 重要的互联网基础设施，遭到攻击损失无法估量
+    \item 因为协议脆弱性、系统脆弱性，存在极大安全隐患
+    \begin{itemize}
+      \item 协议脆弱性：基于UDP交换消息，明文传递，不提供数字签名
+      \item 系统脆弱性：大量开放解析器，解析路径复杂，无法建立信任链 
+    \end{itemize}
   \end{itemize}
-  \begin{figure}
-  \includegraphics[height=3cm,width=7.07cm]{images/domain_tree.png}
-  \caption{Domain Tree}
-  \end{figure}
-  DNSSEC：公钥密码机制，添加数字签名，协议增强
-
-\end{frame}
-
-\begin{frame}{DNS介绍}
-  域名解析过程：
+  % \begin{figure}
+  % \includegraphics[height=3cm,width=7.07cm]{images/domain_zone.png}
+  % \caption{Domain Zone}
+  % \end{figure}
   \begin{figure}
   \includegraphics[height=3cm,width=8.455cm]{images/Example_of_an_iterative_DNS_resolver.png}
+  \caption{域名解析过程}
   \end{figure}
-  % \pause
 
-  常见记录类型：
-  \begin{table}
-    \scriptsize
-  \begin{tabular}{r|l}
-    \toprule
-    记录类型& 含义\\
-    \midrule
-    A& 主机的IPv4地址\\
-    AAAA& 主机的IPv6地址\\
-    NS& 该域名所在域的权威域名服务器\\
-    CNAME& 将当前域名映射到另一个域名\\
-    MX & 将域名映射到该域的邮件传输代理列表 \\
-    PTR&反向DNS查找指针\\
-    \bottomrule
-    \end{tabular}
-  \end{table}
 \end{frame}
 
 \begin{frame}{CDN与负载均衡}
-  CDN：Content Delivery Network
+  
   \begin{itemize}
-    \item 部署边缘服务器，使用户就近获取所需内容，降低网络拥塞
-    \item 依靠CNAME记录，实现网络请求重定向
+    \item 因为CDN与负载均衡的普遍存在，域名解析情况更加复杂
+    \begin{itemize}
+    \item CDN：Content Delivery Network
+    \begin{itemize}
+      \item 部署边缘服务器，使用户就近获取所需内容，降低网络拥塞
+    \end{itemize}
+    \begin{figure}
+    \includegraphics[height=3cm,width=7.07cm]{images/NCDNCDN.png}
+    \end{figure}
+    
+    \item 负载均衡：在多个服务器中分配负载，最优化资源使用，避免过载
+    \end{itemize}
+    \item 一个域名会解析出多个IP，一个IP也可以对应多个域名
   \end{itemize}
-  \begin{figure}
-  \includegraphics[height=3cm,width=7.07cm]{images/NCDNCDN.png}
-  \end{figure}
+  
+  % \pause
 
-  负载均衡
-  \begin{itemize}
-    \item DNS轮循是负载均衡的一种方法
-  \end{itemize}
+
 \end{frame}
 
-\section{毕设内容}
+\begin{frame}{网络安全增强}
+  互联网天然缺乏安全性，通过完善协议可以增强安全性
+  \begin{itemize}
 
+    \item DNSSEC：DNS安全扩展
+    \begin{itemize}
+      \item 使用公钥密码机制，以DNS资源记录计算数字签名，验证数字签名确保解析结果真实
+      \item 提供数据来源、数据完整性和否定存在验证
+    \end{itemize}
+    \item IPv6：下一代互联网协议
+    \begin{itemize}
+      \item IPv6内嵌IPSec协议族的AH和ESP，从协议上提升安全性
+      \item IPv6地址空间大，增大扫描难度，可减缓现有攻击
+    \end{itemize}
+    
+  
 
+  \end{itemize}
+  
 
+  
+\end{frame}
 
 \frame{\frametitle{DNS 请求格式}
 \begin{columns}
@@ -191,42 +199,70 @@
 \end{column}
 \begin{column}{0.5\textwidth}
 
-  \begin{figure}
-    \includegraphics[height=3.9cm,width=5cm]{images/dnsheader.png}
-    \caption{DNS Header}
-    \end{figure}
+    \begin{table}
+    \scriptsize
+  \begin{tabular}{r|l}
+    \toprule
+    记录类型& 含义\\
+    \midrule
+    A& 主机的IPv4地址\\
+    AAAA& 主机的IPv6地址\\
+    NS& 该域名所在域的权威域名服务器\\
+    CNAME& 将当前域名映射到另一个域名\\
+    MX & 将域名映射到邮件传输列表 \\
+    PTR&反向DNS查找指针\\
+    \bottomrule
+    \end{tabular}
+    \caption{常见记录类型}
+  \end{table}  
 \end{column}
 \end{columns}
 }
 
-\begin{frame}{资源记录分析}
-  我们希望通过分析解析数据，了解目前IPv6与DNSSEC普及情况：
-  \begin{enumerate}
-    \item 根据A记录与AAAA记录，判断IPv6支持情况
-    \begin{figure}
-      \includegraphics[height=2.74cm,width=6cm]{images/aaaa.png}
-    \end{figure} 
+\section{毕设内容}
 
-    \item 根据RRSIG记录，判断DNSSEC支持情况
-    \begin{figure}
-      \includegraphics[height=1.79cm,width=7.21cm]{images/dnssec.png}
-    \end{figure} 
-  \end{enumerate}
+
+\begin{frame}{DNS安全现状评估}
+  \begin{itemize}
+    \item 分析域名解析数据，可以了解到域名或解析器对IPv6和DNSSEC的支持情况
+    \begin{enumerate}
+      \item 根据A记录与AAAA记录，判断IPv6支持情况
+      \begin{figure}
+        \includegraphics[height=2.74cm,width=6cm]{images/aaaa.png}
+      \end{figure} 
+  
+      \item 根据RRSIG记录，判断DNSSEC支持情况
+      \begin{figure}
+        \includegraphics[height=1.79cm,width=7.21cm]{images/dnssec.png}
+      \end{figure} 
+    \end{enumerate}
+  \end{itemize}
+  
 
 \end{frame}
 
-\begin{frame}{DNS解析返回类型分析}
+\begin{frame}{DNS安全现状评估}
+  \begin{itemize}
+    \item 分析域名解析数据，可以了解到域名或解析器对IPv6和DNSSEC的支持情况
+    \item 搜集大量Open Resolver与域名数据，测试解析情况，可以进一步了解目前全网对IPv6和DNSSEC的支持情况，据此评估安全现状
+  \end{itemize}
+  
+
+\end{frame}
+
+\begin{frame}{DNS安全增强}
 
   \begin{itemize}
-    \item 通过DNS解析，由域名得到IP地址，存在以下类别：
+    \item 通过DNS解析，由域名得到IP地址，我们将其分为以下类别：
   \begin{enumerate}
     \item 返回唯一IP
-    \item CDN
-    \item 负载均衡
-    \item DNS劫持
-    \item 缓存中毒或其他有害情况
+    \item CDN返回的结果
+    \item 负载均衡返回的结果
+    \item 解析遭到DNS劫持
+    \item 缓存中毒或其他恶意结果
   \end{enumerate}
   \item 我们的目的是实现一个系统，对DNS解析的结果进行分类
+  \item 实现了对DNS劫持与缓存中毒等恶意结果的诊断识别，就实现了对DNS安全增强
   \end{itemize}
   
 \end{frame}
@@ -236,7 +272,7 @@
 \begin{frame}{数据获取}
   \begin{columns}
     \begin{column}{0.5\textwidth}
-      \small{收集 Open Resolvers 数据及Domain Names 数据，进行DNS解析测试}
+      \scriptsize{收集 Open Resolvers 数据及Domain Names 数据，两个数据集叉乘，进行DNS解析测试：}
       
       \begin{table}
         \scriptsize
@@ -272,11 +308,14 @@
   
 \end{frame}
 
-\begin{frame}{数据分析}
+\begin{frame}{DNS解析结果分类}
 
   \begin{itemize}
-    \item CDN 解析的结果通常包含有CNAME记录
+    \item 所有 Resolver 返回结果相同，说明正常
+    \item 一些 CDN 解析的结果包含有CNAME记录
+    \item 只有负载均衡情况下，服务器IP数量有限
     \item 关于DNS劫持的检测，文献\cite{Yan2006}提出了一种基于贝叶斯原理的判别方法
+    \item 文献\cite{Antonakakis2011}提出了一种名为Kopis的新型检测系统，用于通过被动监控DNS层次结构上层的DNS流量来检测与恶意软件相关的域名
   \end{itemize}
 
 \end{frame}
@@ -286,7 +325,7 @@
 \begin{frame}{未来工作计划}
 
   \begin{itemize}
-    \item 继续文献调研，研究对负载均衡、缓存中毒等类别DNS解析结果的判别方法
+    \item 继续文献调研，研究对DNS劫持、缓存中毒等类别DNS解析结果的判别方法
     \item 进一步收集Open Resolvers，获取数据进行分析
   \end{itemize}
 

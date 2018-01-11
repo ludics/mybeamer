@@ -1,5 +1,5 @@
 \beamer@endinputifotherversion {3.36pt}
 \beamer@sectionintoc {1}{背景介绍}{3}{0}{1}
-\beamer@sectionintoc {2}{毕设内容}{7}{0}{2}
-\beamer@sectionintoc {3}{操作方法}{11}{0}{3}
-\beamer@sectionintoc {4}{未来工作计划}{14}{0}{4}
+\beamer@sectionintoc {2}{毕设内容}{8}{0}{2}
+\beamer@sectionintoc {3}{操作方法}{12}{0}{3}
+\beamer@sectionintoc {4}{未来工作计划}{15}{0}{4}
