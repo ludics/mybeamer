@@ -1,15 +1,17 @@
 \begin{thebibliography}{1}
 
-\bibitem{Yan2006}
-Boru Yan, Binxing Fang, Bin Li, and Yao Wang.
-\newblock {Detection and defence of DNS spoofing attack}.
-\newblock {\em Jisuanji GongchengComputer Engineering}, 32(21):130 -- 132+135,
-  2006.
+\bibitem{Pearce2017}
+Paul Pearce, U~C Berkeley, Ben Jones, Frank Li, U~C Berkeley, Roya Ensafi, Nick
+  Feamster, Nick Weaver, Vern Paxson, U~C Berkeley, Paul Pearce, Ben Jones,
+  Frank Li, Nick Feamster, and Vern Paxson.
+\newblock {Global Measurement of DNS Manipulation}.
+\newblock 2017.
 
-\bibitem{Antonakakis2011}
-Manos Antonakakis, Roberto Perdisci, Wenke Lee, Nikolaos~Vasiloglou Ii, and
-  David Dagon.
-\newblock {Detecting Malware Domains at the Upper DNS Hierarchy}.
-\newblock {\em USENIX Security Symposium.}, 11:1--16, 2011.
+\bibitem{Kuhrer}
+Marc K{\"{u}}hrer, Thomas Hupperich, Jonas Bushart, Christian Rossow, and
+  Thorsten Holz.
+\newblock {Going Wild : Large-Scale Classification of Open DNS Resolvers
+  Categories and Subject Descriptors}.
+\newblock pages 355--368.
 
 \end{thebibliography}
