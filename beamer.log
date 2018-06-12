@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.11.6)  10 JUN 2018 18:07
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.11.6)  11 JUN 2018 23:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2055,51 +2055,50 @@ File: images/thuee-logo.png Graphic file (type QTm)
 File: images/thuee-logo.png Graphic file (type QTm)
  <use  "images/thuee-logo.png" > [9
 
-]
+] (./beamer.toc)
 File: images/thuee-logo.png Graphic file (type QTm)
 
 <use  "images/thuee-logo.png" > [10
 
 ]
-File: images/ipv4sjk.png Graphic file (type QTm)
- <use  "images/ipv4sjk.png" >
-File: images/ipv6sjk.png Graphic file (type QTm)
-
-<use  "images/ipv6sjk.png" >
 File: images/thuee-logo.png Graphic file (type QTm)
  <use  "images/thuee-logo.png" > [11
 
 ]
-File: images/figure/figure_2.png Graphic file (type QTm)
+File: images/ipv4sjk.png Graphic file (type QTm)
 
-<use  "images/figure/figure_2.png" >
-File: images/figure/figure_3.png Graphic file (type QTm)
- <use  "images/figure/figure_3.png" >
+<use  "images/ipv4sjk.png" >
+File: images/ipv6sjk.png Graphic file (type QTm)
+ <use  "images/ipv6sjk.png" >
 File: images/thuee-logo.png Graphic file (type QTm)
 
 <use  "images/thuee-logo.png" > [12
 
 ]
-File: images/figure/figure_1.png Graphic file (type QTm)
- <use  "images/figure/figure_1.png" >
-File: images/figure/figure_4.png Graphic file (type QTm)
+File: images/figure/figure_2.png Graphic file (type QTm)
+ <use  "images/figure/figure_2.png" >
+File: images/figure/figure_3.png Graphic file (type QTm)
 
-<use  "images/figure/figure_4.png" >
+<use  "images/figure/figure_3.png" >
 File: images/thuee-logo.png Graphic file (type QTm)
  <use  "images/thuee-logo.png" > [13
 
 ]
-(./beamer.toc)
+File: images/figure/figure_1.png Graphic file (type QTm)
+
+<use  "images/figure/figure_1.png" >
+File: images/figure/figure_4.png Graphic file (type QTm)
+ <use  "images/figure/figure_4.png" >
 File: images/thuee-logo.png Graphic file (type QTm)
- <use  "images/thuee-logo.png" > [14
+
+<use  "images/thuee-logo.png" > [14
 
 ]
 File: images/thuee-logo.png Graphic file (type QTm)
-
-<use  "images/thuee-logo.png" > [15
+ <use  "images/thuee-logo.png" > [15
 
 ]
-Overfull \hbox (4.61641pt too wide) in paragraph at lines 415--415
+Overfull \hbox (4.61641pt too wide) in paragraph at lines 416--416
  [] 
  []
 
@@ -2108,7 +2107,7 @@ File: images/figure/figure_httpscheck.png Graphic file (type QTm)
 File: images/figure/certserver.png Graphic file (type QTm)
 
 <use  "images/figure/certserver.png" >
-Overfull \hbox (21.16844pt too wide) in paragraph at lines 415--415
+Overfull \hbox (21.16844pt too wide) in paragraph at lines 416--416
  [] 
  []
 
@@ -2145,33 +2144,24 @@ File: images/thuee-logo.png Graphic file (type QTm)
 
 <use  "images/thuee-logo.png" > [20
 
-] (./beamer.toc)
-File: images/thuee-logo.png Graphic file (type QTm)
-
-<use  "images/thuee-logo.png" > [21
-
-]
-File: images/thuee-logo.png Graphic file (type QTm)
- <use  "images/thuee-logo.png" > [22
-
-]
-(./beamer.bbl
+] (./beamer.bbl
 File: beamericonarticle.pdf Graphic file (type QTm)
- <use  "beamericonarticle.pdf" >
+
+<use  "beamericonarticle.pdf" >
 File: beamericonarticle.pdf Graphic file (type QTm)
  <use  "beamericonarticle.pdf" >
 File: beamericonarticle.pdf Graphic file (type QTm)
 
 <use  "beamericonarticle.pdf" >)
 File: images/thuee-logo.png Graphic file (type QTm)
- <use  "images/thuee-logo.png" > [23
+ <use  "images/thuee-logo.png" > [21
 
 ]
 File: images/thank.jpg Graphic file (type QTm)
 
 <use  "images/thank.jpg" >
 File: images/thuee-logo.png Graphic file (type QTm)
- <use  "images/thuee-logo.png" > [24
+ <use  "images/thuee-logo.png" > [22
 
 ]
 \tf@nav=\write7
@@ -2183,24 +2173,24 @@ File: images/thuee-logo.png Graphic file (type QTm)
 \tf@snm=\write9
 \openout9 = `beamer.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 502.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 502.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 487.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 487.
  (./beamer.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 502.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 502.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 487.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 487.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 502.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 487.
  ) 
 Here is how much of TeX's memory you used:
- 36920 strings out of 493638
- 720902 string characters out of 6146796
+ 36911 strings out of 493638
+ 720824 string characters out of 6146796
  747306 words of memory out of 5000000
- 39688 multiletter control sequences out of 15000+600000
+ 39681 multiletter control sequences out of 15000+600000
  12376 words of font info for 86 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  56i,16n,64p,10405b,691s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on beamer.pdf (24 pages).
+Output written on beamer.pdf (22 pages).

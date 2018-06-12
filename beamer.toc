@@ -1,6 +1,5 @@
 \beamer@endinputifotherversion {3.36pt}
 \beamer@sectionintoc {1}{背景介绍}{3}{0}{1}
-\beamer@sectionintoc {2}{数据获取}{9}{0}{2}
-\beamer@sectionintoc {3}{结果标记}{14}{0}{3}
+\beamer@sectionintoc {2}{系统设计}{9}{0}{2}
+\beamer@sectionintoc {3}{实验实施}{10}{0}{3}
 \beamer@sectionintoc {4}{数据分析}{17}{0}{4}
-\beamer@sectionintoc {5}{未来工作计划}{21}{0}{5}
