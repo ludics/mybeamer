@@ -3,48 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: beamer.aux
 The style file: unsrt.bst
 Database file #1: ref.bib
-Warning--empty journal in Pearce2017
-Warning--empty journal in Kuhrer
-Warning--empty year in Kuhrer
-You've used 2 entries,
+You've used 3 entries,
             1791 wiz_defined-function locations,
-            455 strings with 4042 characters,
-and the built_in function-call counts, 705 in all, are:
-= -- 45
-> -- 64
+            467 strings with 4274 characters,
+and the built_in function-call counts, 894 in all, are:
+= -- 69
+> -- 57
 < -- 1
-+ -- 22
-- -- 20
-* -- 59
-:= -- 124
-add.period$ -- 6
-call.type$ -- 2
-change.case$ -- 2
++ -- 20
+- -- 17
+* -- 65
+:= -- 145
+add.period$ -- 9
+call.type$ -- 3
+change.case$ -- 3
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 26
-empty$ -- 44
-format.name$ -- 20
-if$ -- 143
+cite$ -- 3
+duplicate$ -- 45
+empty$ -- 83
+format.name$ -- 17
+if$ -- 202
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 2
-newline$ -- 13
-num.names$ -- 2
-pop$ -- 11
+int.to.str$ -- 3
+missing$ -- 3
+newline$ -- 18
+num.names$ -- 3
+pop$ -- 20
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 18
+skip$ -- 16
 stack$ -- 0
 substring$ -- 32
-swap$ -- 9
+swap$ -- 12
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 3
-while$ -- 5
-width$ -- 3
-write$ -- 20
-(There were 3 warnings)
+warning$ -- 0
+while$ -- 6
+width$ -- 4
+write$ -- 36
