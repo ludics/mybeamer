@@ -1,11 +1,6 @@
-\beamer@endinputifotherversion {3.36pt}
-\beamer@sectionintoc {1}{背景介绍}{3}{0}{1}
-\beamer@sectionintoc {2}{系统设计与实施}{10}{0}{2}
-\beamer@subsectionintoc {2}{1}{整体架构}{11}{0}{2}
-\beamer@subsectionintoc {2}{2}{测量内容}{12}{0}{2}
-\beamer@subsectionintoc {2}{3}{数据获取}{15}{0}{2}
-\beamer@subsectionintoc {2}{4}{安全评估与增强}{17}{0}{2}
-\beamer@subsectionintoc {2}{5}{实验部署}{21}{0}{2}
-\beamer@sectionintoc {3}{数据分析与结论}{22}{0}{3}
-\beamer@subsectionintoc {3}{1}{对权威服务器的考察}{23}{0}{3}
-\beamer@subsectionintoc {3}{2}{对开放解析器的考察}{28}{0}{3}
+\beamer@sectionintoc {1}{个人信息}{2}{0}{1}
+\beamer@sectionintoc {2}{项目经历}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{课程项目}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{毕业设计}{6}{0}{2}
+\beamer@subsectionintoc {2}{3}{实习经历}{7}{0}{2}
+\beamer@sectionintoc {3}{研究计划}{9}{0}{3}
